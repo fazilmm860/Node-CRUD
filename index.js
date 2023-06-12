@@ -28,6 +28,10 @@ try {
     console.log("Error:" + error);
 }
 const port = process.env.PORT //3030;
+ 
+app.get('/',(req,res)=>{
+    res.send("HI I AM FAZIL FROM CALICUT!!!!!!")
+})
 
 const studentRouter = require('./routes/student');
 app.use("/students", studentRouter);
